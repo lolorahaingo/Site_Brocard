@@ -105,39 +105,48 @@
     <section class="section section-alt" id="actualites">
         <div class="container">
             <h2 class="section-title fade-in">Actualites</h2>
-            <div class="cards-grid fade-in">
-                <article class="card">
-                    <img src="images/brocard_flynkiss.jpg" alt="Evenement FLY n'KISS 2019" class="card-img">
-                    <div class="card-body">
-                        <span class="card-date">Mai 2019</span>
-                        <h3 class="card-title">FLY n'KISS</h3>
-                        <p>Les benevoles du club se sont associes a l'association FLY n'KISS pour offrir des baptemes de l'air a une centaine d'enfants en situation de handicap, de maladie ou de difficulte sociale.</p>
+            <p class="section-intro fade-in">Suivez les dernieres nouvelles du club directement depuis notre page Facebook.</p>
+
+            <div class="actu-layout fade-in">
+                <!-- Feed Facebook live -->
+                <div class="fb-feed">
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0"></script>
+                    <div class="fb-page"
+                        data-href="https://www.facebook.com/aeroclub.brocard/"
+                        data-tabs="timeline"
+                        data-width="500"
+                        data-height="700"
+                        data-small-header="false"
+                        data-adapt-container-width="true"
+                        data-hide-cover="false"
+                        data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/aeroclub.brocard/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/aeroclub.brocard/">Aeroclub Brocard sur Facebook</a>
+                        </blockquote>
                     </div>
-                </article>
-                <article class="card">
-                    <img src="images/brocard_cafe.jpg" alt="Cafe Croissants 2019" class="card-img">
-                    <div class="card-body">
-                        <span class="card-date">Septembre 2019</span>
-                        <h3 class="card-title">Cafe Croissants</h3>
-                        <p>Vols conviviaux du dimanche matin. Retrouvez-nous pour un cafe suivi d'un vol en groupe au-dessus de la Beauce.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="images/brocard_cours.jpg" alt="Cours theoriques" class="card-img">
-                    <div class="card-body">
-                        <span class="card-date">Saison en cours</span>
-                        <h3 class="card-title">Cours Theoriques</h3>
-                        <p>Reprise des cours de preparation aux epreuves theoriques PPL/LAPL. Obligatoires pour les eleves, conseilles a tout pilote souhaitant rafraichir ses connaissances.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="images/brocard_vac.jpg" alt="Carte VAC LFOX" class="card-img">
-                    <div class="card-body">
-                        <span class="card-date">Mars 2018</span>
-                        <h3 class="card-title">Mise a jour VAC LFOX</h3>
-                        <p>Carte d'approche a vue (VAC) actualisee suite a la mise en place de la RMZ sur l'aerodrome de Mondesir.</p>
-                    </div>
-                </article>
+                </div>
+
+                <!-- Evenements marquants -->
+                <div class="actu-highlights">
+                    <h3 class="actu-highlights-title">Evenements marquants</h3>
+                    <article class="card">
+                        <img src="images/brocard_flynkiss.jpg" alt="Evenement FLY n'KISS 2019" class="card-img">
+                        <div class="card-body">
+                            <span class="card-date">Mai 2019</span>
+                            <h3 class="card-title">FLY n'KISS</h3>
+                            <p>Baptemes de l'air offerts a une centaine d'enfants en situation de handicap ou de difficulte sociale.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="images/brocard_cafe.jpg" alt="Cafe Croissants" class="card-img">
+                        <div class="card-body">
+                            <span class="card-date">Dimanche matin</span>
+                            <h3 class="card-title">Cafe Croissants</h3>
+                            <p>Vols conviviaux du dimanche. Cafe suivi d'un vol en groupe au-dessus de la Beauce.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
