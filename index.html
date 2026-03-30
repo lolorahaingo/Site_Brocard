@@ -4,101 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aero-Club Brocard - Ecole de pilotage ATO a l'aerodrome de Mondesir (LFOX). Formation LAPL, PPL, BIA et vols decouverte pres de Paris.">
-    <meta name="keywords" content="aeroclub brocard, ecole pilotage, LAPL, PPL, BIA, vol decouverte, aerodrome mondesir, LFOX, Guillerval, Essonne, apprendre a piloter">
     <meta name="author" content="Aero-Club Brocard">
     <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Aero-Club Brocard | Ecole de Pilotage ATO">
     <meta property="og:description" content="Ecole de pilotage a l'aerodrome de Mondesir (LFOX). Formation LAPL, PPL, BIA et vols decouverte.">
     <meta property="og:image" content="images/brocard_bg.jpg">
     <meta property="og:locale" content="fr_FR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Aero-Club Brocard | Ecole de Pilotage ATO">
-    <meta name="twitter:description" content="Ecole de pilotage a l'aerodrome de Mondesir (LFOX). Formation LAPL, PPL, BIA et vols decouverte.">
-    <meta name="twitter:image" content="images/brocard_bg.jpg">
-
     <title>Aero-Club Brocard | Ecole de Pilotage ATO - Aerodrome de Mondesir</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SportsActivityLocation",
         "name": "Aero-Club Brocard",
-        "description": "Ecole de pilotage ATO - Formation LAPL, PPL, BIA et vols decouverte",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Aerodrome de Mondesir",
-            "addressLocality": "Guillerval",
-            "postalCode": "91690",
-            "addressCountry": "FR"
-        },
+        "foundingDate": "1953",
+        "address": {"@type": "PostalAddress", "streetAddress": "Aerodrome de Mondesir", "addressLocality": "Guillerval", "postalCode": "91690", "addressCountry": "FR"},
         "telephone": "+33160809780",
-        "url": "https://aeroclub-brocard.fr",
-        "sameAs": [
-            "https://www.facebook.com/aeroclub.brocard/",
-            "https://www.instagram.com/aeroclub.brocard/"
-        ]
+        "email": "aeroclub.brocard@free.fr"
     }
     </script>
 </head>
 <body>
 
-    <!-- ===== HEADER / NAV ===== -->
+    <!-- HEADER -->
     <header class="header" id="top">
         <div class="container header-inner">
-            <a href="#top" class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/brocard_logo.png" alt="Logo Aero-Club Brocard" class="logo-img">
                 <span class="logo-text">Aero-Club Brocard</span>
             </a>
-
             <nav class="nav-links" aria-label="Navigation principale">
-                <a href="#actualites">Actualites</a>
-                <a href="#club">L'Aero-Club</a>
-                <a href="#piloter">Apprendre a piloter</a>
-                <a href="#cours">Cours Theoriques</a>
-                <a href="#flotte">Flotte & Tarifs</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html" class="active">Accueil</a>
+                <a href="club.html">L'Aero-Club</a>
+                <a href="formation.html">Apprendre a piloter</a>
+                <a href="cours.html">Cours Theoriques</a>
+                <a href="flotte.html">Flotte & Tarifs</a>
+                <a href="contact.html">Contact</a>
             </nav>
-
             <div class="nav-external">
-                <a href="https://openflyers.com/brocard/" target="_blank" rel="noopener noreferrer" class="btn-external" title="Reservation OpenFlyers">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                <a href="https://openflyers.com/brocard/" target="_blank" rel="noopener noreferrer" class="btn-external">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
                     OpenFlyers
                 </a>
             </div>
-
             <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
+    <!-- HERO -->
+    <section class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1 class="fade-in">Aero-Club Brocard</h1>
             <p class="hero-subtitle fade-in">Ecole de Pilotage ATO &mdash; Aerodrome de Mondesir (LFOX)</p>
+            <p class="hero-subtitle fade-in" style="font-size:1rem; opacity:0.8; margin-bottom:2rem;">Fonde en 1953 &mdash; Association de passionnes 100% benevoles</p>
             <div class="hero-ctas fade-in">
-                <a href="#club" class="btn btn-primary">Decouvrir le club</a>
-                <a href="#piloter" class="btn btn-outline">Vol decouverte</a>
+                <a href="club.html" class="btn btn-primary">Decouvrir le club</a>
+                <a href="formation.html" class="btn btn-outline">Apprendre a piloter</a>
             </div>
         </div>
     </section>
 
-    <!-- ===== ACTUALITES ===== -->
-    <section class="section" id="actualites">
+    <!-- LE CLUB EN BREF -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Le club en bref</h2>
+            <div class="stats-grid fade-in">
+                <div class="stat-card">
+                    <span class="stat-number">1953</span>
+                    <span class="stat-label">Annee de fondation</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Avions dans la flotte</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">14</span>
+                    <span class="stat-label">Instructeurs qualifies</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">Gratuite</span>
+                    <span class="stat-label">Instruction 7j/7</span>
+                </div>
+            </div>
+            <div class="stats-ctas fade-in">
+                <a href="flotte.html" class="btn btn-small">Voir la flotte</a>
+                <a href="formation.html" class="btn btn-small">Nos formations</a>
+                <a href="contact.html" class="btn btn-small">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTUALITES -->
+    <section class="section section-alt" id="actualites">
         <div class="container">
             <h2 class="section-title fade-in">Actualites</h2>
             <div class="cards-grid fade-in">
@@ -107,292 +111,72 @@
                     <div class="card-body">
                         <span class="card-date">Mai 2019</span>
                         <h3 class="card-title">FLY n'KISS</h3>
-                        <p>Baptemes de l'air offerts aux enfants defavorises. Une journee solidaire et inoubliable sur l'aerodrome de Mondesir.</p>
+                        <p>Les benevoles du club se sont associes a l'association FLY n'KISS pour offrir des baptemes de l'air a une centaine d'enfants en situation de handicap, de maladie ou de difficulte sociale.</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="images/brocard_cafe.jpg" alt="Cafe Croissants 2019" class="card-img">
                     <div class="card-body">
                         <span class="card-date">Septembre 2019</span>
                         <h3 class="card-title">Cafe Croissants</h3>
-                        <p>Vols conviviaux du dimanche matin. Rejoignez-nous pour un cafe suivi d'un vol en groupe au-dessus de la Beauce.</p>
+                        <p>Vols conviviaux du dimanche matin. Retrouvez-nous pour un cafe suivi d'un vol en groupe au-dessus de la Beauce.</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="images/brocard_cours.jpg" alt="Cours theoriques" class="card-img">
                     <div class="card-body">
                         <span class="card-date">Saison en cours</span>
                         <h3 class="card-title">Cours Theoriques</h3>
-                        <p>Reprise des cours theoriques pour les brevets LAPL et PPL. Consultez le calendrier pour les prochaines sessions.</p>
+                        <p>Reprise des cours de preparation aux epreuves theoriques PPL/LAPL. Obligatoires pour les eleves, conseilles a tout pilote souhaitant rafraichir ses connaissances.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/brocard_vac.jpg" alt="Carte VAC LFOX" class="card-img">
+                    <div class="card-body">
+                        <span class="card-date">Mars 2018</span>
+                        <h3 class="card-title">Mise a jour VAC LFOX</h3>
+                        <p>Carte d'approche a vue (VAC) actualisee suite a la mise en place de la RMZ sur l'aerodrome de Mondesir.</p>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- ===== L'AERO-CLUB ===== -->
-    <section class="section section-alt" id="club">
-        <div class="container">
-            <h2 class="section-title fade-in">L'Aero-Club</h2>
-            <div class="about-grid fade-in">
-                <div class="about-text">
-                    <p>L'Aero-Club Brocard est une ecole de pilotage agreee <strong>ATO</strong> (Approved Training Organisation) situee sur l'aerodrome de Mondesir, au coeur de la Beauce.</p>
-                    <p>Depuis sa creation, le club forme des pilotes prives et propose un cadre convivial pour decouvrir et pratiquer l'aviation legere. Que vous souhaitiez obtenir votre licence ou simplement decouvrir le plaisir du vol, notre equipe d'instructeurs qualifies vous accompagne a chaque etape.</p>
-                    <p>L'aerodrome de Mondesir (code OACI : <strong>LFOX</strong>) offre un environnement de vol ideal, avec des installations modernes et un espace aerien degage, a seulement 1h de Paris.</p>
-                    <div class="about-badges">
-                        <div class="badge">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            Aerodrome de Mondesir, 91690 Guillerval
-                        </div>
-                        <div class="badge">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            Code OACI : LFOX
-                        </div>
-                        <div class="badge">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            Organisme ATO agree
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/brocard_bg.jpg" alt="Aerodrome de Mondesir" class="rounded-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== APPRENDRE A PILOTER ===== -->
-    <section class="section" id="piloter">
-        <div class="container">
-            <h2 class="section-title fade-in">Apprendre a piloter</h2>
-            <p class="section-intro fade-in">Du premier vol decouverte a l'obtention de votre licence, nous vous accompagnons dans votre parcours de pilote.</p>
-
-            <div class="training-grid fade-in">
-                <div class="training-card">
-                    <div class="training-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                    </div>
-                    <h3>Vol Decouverte</h3>
-                    <p>Votre premiere experience aux commandes d'un avion. Accompagne par un instructeur, decouvrez les sensations du pilotage lors d'un vol au-dessus de la Beauce.</p>
-                    <span class="training-tag">1 vol</span>
-                </div>
-
-                <div class="training-card">
-                    <div class="training-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-4h6v4"/></svg>
-                    </div>
-                    <h3>Brevet LAPL</h3>
-                    <p>Light Aircraft Pilot Licence : votre premiere licence de pilote. Formation theorique et pratique pour voler en Europe sur des avions legers (jusqu'a 4 places, 2 tonnes max).</p>
-                    <span class="training-tag">30h min.</span>
-                </div>
-
-                <div class="training-card">
-                    <div class="training-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                    </div>
-                    <h3>Brevet PPL</h3>
-                    <p>Private Pilot Licence : la licence internationale. Pilotez partout dans le monde, emportez des passagers et accedez a des qualifications supplementaires (vol de nuit, IFR...).</p>
-                    <span class="training-tag">45h min.</span>
-                </div>
-
-                <div class="training-card">
-                    <div class="training-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                    </div>
-                    <h3>BIA</h3>
-                    <p>Brevet d'Initiation Aeronautique : decouvrez l'univers de l'aeronautique (meteorologie, navigation, mecanique du vol). Ouvert a tous, ideal pour les jeunes passionnes.</p>
-                    <span class="training-tag">Formation theorique</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== COURS THEORIQUES ===== -->
-    <section class="section section-alt" id="cours">
-        <div class="container">
-            <h2 class="section-title fade-in">Cours Theoriques</h2>
-            <div class="theory-content fade-in">
-                <div class="theory-text">
-                    <p>Les cours theoriques sont dispenses au club par nos instructeurs experimentes. Ils couvrent l'ensemble du programme requis pour les examens LAPL et PPL :</p>
-                    <ul class="theory-list">
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Reglementation et procedures
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Connaissance generale de l'aeronef
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Performances et preparation du vol
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Navigation et meteorologie
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Principes du vol et facteurs humains
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Communications VFR
-                        </li>
-                    </ul>
-                </div>
-                <div class="theory-schedule">
-                    <div class="schedule-card">
-                        <h3>Prochaines sessions</h3>
-                        <p>Les cours ont lieu au siege du club, a l'aerodrome de Mondesir. Contactez-nous pour connaitre les dates des prochaines sessions et vous inscrire.</p>
-                        <a href="#contact" class="btn btn-primary">Nous contacter</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FLOTTE & TARIFS ===== -->
-    <section class="section" id="flotte">
-        <div class="container">
-            <h2 class="section-title fade-in">Flotte & Tarifs</h2>
-            <p class="section-intro fade-in">Notre flotte d'avions est entretenue avec soin et disponible a la reservation via OpenFlyers.</p>
-
-            <div class="fleet-grid fade-in">
-                <div class="fleet-card">
-                    <div class="fleet-img-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                    </div>
-                    <div class="fleet-info">
-                        <h3>Avion Ecole</h3>
-                        <p class="fleet-type">Biplace de formation</p>
-                        <ul class="fleet-specs">
-                            <li>Formation initiale LAPL/PPL</li>
-                            <li>Double commandes</li>
-                        </ul>
-                        <p class="fleet-note">Consultez OpenFlyers pour les tarifs et la disponibilite.</p>
-                        <a href="https://openflyers.com/brocard/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Reserver sur OpenFlyers</a>
-                    </div>
-                </div>
-
-                <div class="fleet-card">
-                    <div class="fleet-img-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                    </div>
-                    <div class="fleet-info">
-                        <h3>Avion de Voyage</h3>
-                        <p class="fleet-type">Quadriplace</p>
-                        <ul class="fleet-specs">
-                            <li>Navigation et voyages</li>
-                            <li>Emport passagers</li>
-                        </ul>
-                        <p class="fleet-note">Consultez OpenFlyers pour les tarifs et la disponibilite.</p>
-                        <a href="https://openflyers.com/brocard/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Reserver sur OpenFlyers</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fleet-cta fade-in">
-                <p>Pour les tarifs detailles, les disponibilites et les reservations, rendez-vous sur notre plateforme de gestion :</p>
-                <a href="https://openflyers.com/brocard/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Acceder a OpenFlyers
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="section section-alt" id="contact">
-        <div class="container">
-            <h2 class="section-title fade-in">Contact</h2>
-            <div class="contact-grid fade-in">
-                <div class="contact-info">
-                    <h3>Nous trouver</h3>
-                    <div class="contact-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <div>
-                            <strong>Aerodrome de Mondesir</strong><br>
-                            91690 Guillerval<br>
-                            France
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        <div>
-                            <a href="tel:+33160809780">01 60 80 97 80</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                        <div>
-                            Code OACI : <strong>LFOX</strong>
-                        </div>
-                    </div>
-
-                    <div class="contact-socials">
-                        <a href="https://www.facebook.com/aeroclub.brocard/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="https://www.instagram.com/aeroclub.brocard/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2641.5!2d2.0833!3d48.3667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d3e8f0000001%3A0x0!2sA%C3%A9rodrome+de+Mond%C3%A9sir!5e0!3m2!1sfr!2sfr!4v1"
-                        width="100%"
-                        height="350"
-                        style="border:0; border-radius: 12px;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Localisation Aerodrome de Mondesir">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-inner">
             <div class="footer-col">
-                <img src="images/brocard_logo.png" alt="Logo Aero-Club Brocard" class="footer-logo">
-                <p>Aero-Club Brocard<br>Ecole de Pilotage ATO</p>
+                <img src="images/brocard_logo.png" alt="Logo" class="footer-logo">
+                <p>Aero-Club Brocard<br>Ecole de Pilotage ATO<br>Fonde en 1953</p>
             </div>
             <div class="footer-col">
                 <h4>Navigation</h4>
-                <a href="#actualites">Actualites</a>
-                <a href="#club">L'Aero-Club</a>
-                <a href="#piloter">Apprendre a piloter</a>
-                <a href="#cours">Cours Theoriques</a>
-                <a href="#flotte">Flotte & Tarifs</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html">Accueil</a>
+                <a href="club.html">L'Aero-Club</a>
+                <a href="formation.html">Apprendre a piloter</a>
+                <a href="cours.html">Cours Theoriques</a>
+                <a href="flotte.html">Flotte & Tarifs</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-col">
                 <h4>Liens utiles</h4>
                 <a href="https://openflyers.com/brocard/" target="_blank" rel="noopener noreferrer">OpenFlyers (Reservation)</a>
+                <a href="http://cam.aeroclub-brocard.fr" target="_blank" rel="noopener noreferrer">CAM (Gestion)</a>
                 <a href="https://www.facebook.com/aeroclub.brocard/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://www.instagram.com/aeroclub.brocard/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="mentions-legales/">Mentions legales</a>
+                <a href="mentions-legales.html">Mentions legales</a>
             </div>
             <div class="footer-col">
                 <h4>Contact</h4>
                 <p>Aerodrome de Mondesir<br>91690 Guillerval</p>
                 <p><a href="tel:+33160809780">01 60 80 97 80</a></p>
+                <p><a href="mailto:aeroclub.brocard@free.fr">aeroclub.brocard@free.fr</a></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 Aero-Club Brocard. Tous droits reserves.</p>
-            </div>
+            <div class="container"><p>&copy; 2025 Aero-Club Brocard. Tous droits reserves.</p></div>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
 </body>
 </html>

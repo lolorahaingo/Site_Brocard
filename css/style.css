@@ -795,6 +795,318 @@ h4 { font-size: 1.1rem; font-weight: 600; }
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* === PAGE HEADER (inner pages) === */
+
+.page-header {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+    padding: 8rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/brocard_bg.jpg') center/cover no-repeat;
+    opacity: 0.1;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header h1 {
+    color: var(--color-white);
+    font-size: 2.8rem;
+    margin-bottom: 0.3em;
+}
+
+.page-header p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+/* === DISCOVERY (Vol Decouverte) === */
+
+.discovery-block {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.discovery-block p {
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* === TRAINING CARD DETAIL === */
+
+.training-card-detail {
+    text-align: left;
+}
+
+.training-card-detail h3 {
+    text-align: center;
+}
+
+.training-card-detail .training-subtitle {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.training-card-detail ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.training-card-detail ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.88rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+}
+
+.training-card-detail ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-sky);
+}
+
+.training-card-detail .training-tag {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* === EXAM SUBJECTS === */
+
+.exam-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.exam-content > p {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+}
+
+.exam-subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.exam-subjects li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    padding: 0.6rem 1rem;
+    background: var(--color-white);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.exam-subjects li .exam-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--color-sky-light);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+/* === INSTRUCTOR GRID === */
+
+.instructor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.instructor-grid .instructor-item {
+    text-align: center;
+}
+
+.instructor-grid .instructor-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.instructor-grid .instructor-photo:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+/* === STATS GRID (Club en bref) === */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-sky);
+}
+
+.stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+.stats-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* === DIRECTIONS GRID (Comment venir) === */
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* === LINKS GRID (Liens utiles) === */
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.link-card {
+    display: block;
+    padding: 1.5rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-sky);
+    color: var(--color-primary);
+}
+
+.link-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.link-card p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* === BUREAU GRID === */
+
+.bureau-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.bureau-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.bureau-card h3 {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.bureau-card p {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+
+/* === FLEET PRICE TAG === */
+
+.fleet-price {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+}
+
 /* === FADE IN ANIMATION === */
 
 .fade-in {
