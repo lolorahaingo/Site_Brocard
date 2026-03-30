@@ -972,6 +972,22 @@ h4 { font-size: 1.1rem; font-weight: 600; }
     box-shadow: var(--shadow-md);
 }
 
+.instructor-name {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+.instructor-role {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
 /* === STATS GRID (Club en bref) === */
 
 .stats-grid {
